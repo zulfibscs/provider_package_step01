@@ -12,7 +12,6 @@ class _ExampleOneScreenState extends State<ExampleOneScreen> {
   @override
 
   Widget build(BuildContext context) {
-    print('object');
     final provider=Provider.of<ExampleOneProvider>(context,listen: false);
 
     return Scaffold(
@@ -39,7 +38,7 @@ class _ExampleOneScreenState extends State<ExampleOneScreen> {
                     decoration: BoxDecoration(
                         color: Colors.red.withOpacity(provider.value)
                     ),
-                    child: Center(child: Text('Container 1')),
+                    child: const Center(child: Text('Container 1')),
                   ),
                 ),
                 Container(
@@ -47,7 +46,7 @@ class _ExampleOneScreenState extends State<ExampleOneScreen> {
                   decoration: BoxDecoration(
                       color: Colors.green.withOpacity(provider.value)
                   ),
-                  child: Center(child: Text('Container 1')),
+                  child: const Center(child: Text('Container 1')),
                 ),
                 Expanded(
                   child: Container(
@@ -55,7 +54,7 @@ class _ExampleOneScreenState extends State<ExampleOneScreen> {
                     decoration: BoxDecoration(
                         color: Colors.yellow.withOpacity(provider.value)
                     ),
-                    child: Center(child: Text('Container 1')),
+                    child: const Center(child: Text('Container 1')),
                   ),
                 ),
               ],
